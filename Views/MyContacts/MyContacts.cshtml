@@ -1,9 +1,44 @@
-﻿@{ 
-}
-<nav>
-    <ul>
-        <li><a href="@Url.Action("AddUser", "AddUser")" class="btn btn-primary">Go to Add User</a></li>
-        <!-- Other navigation links if needed -->
-    </ul>
-</nav>
-<h1>Hello MyContacts</h1>
+﻿@model List<string>
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Contacts</title>
+    <link rel="stylesheet" type="text/css" href="../../Assets/css/StyleSheet.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-md navbar-dark bg-dark mb-4">
+            <div class="container-fluid">
+                <a routerlink="/" class="navbar-brand">MyContacts</a>
+                <div>
+                    <ul class="navbar-nav me-auto mb-2 mb-md-0">
+                        <li class="nav-item">
+                            <a href="@Url.Action("MyContacts", "MyContacts")" class="nav-link active">Contacts</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="@Url.Action("AddUser", "AddUser")" class="nav-link">Add</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="/" class="nav-link">Logout</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div style="position:center; text-align:center;">
+        <h1>List of Contacts</h1>
+        <ul>
+            @foreach (var item in Model)
+            {
+                <li style="list-style: none;">
+                    <a href="@Url.Action("EditUser", "EditUser", new { content = item })">@item</a>
+                </li>
+            }
+        </ul>
+    </div>
+</body>
+</html>

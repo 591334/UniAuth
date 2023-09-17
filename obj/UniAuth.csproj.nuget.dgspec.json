@@ -1,20 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\HenrikE\\source\\repos\\UniAuth\\UniAuth\\UniAuth.csproj": {}
+    "C:\\Users\\Henrik\\source\\repos\\WebApp\\UniAuth\\UniAuth.csproj": {}
   },
   "projects": {
-    "C:\\Users\\HenrikE\\source\\repos\\UniAuth\\UniAuth\\UniAuth.csproj": {
+    "C:\\Users\\Henrik\\source\\repos\\WebApp\\UniAuth\\UniAuth.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\HenrikE\\source\\repos\\UniAuth\\UniAuth\\UniAuth.csproj",
+        "projectUniqueName": "C:\\Users\\Henrik\\source\\repos\\WebApp\\UniAuth\\UniAuth.csproj",
         "projectName": "UniAuth",
-        "projectPath": "C:\\Users\\HenrikE\\source\\repos\\UniAuth\\UniAuth\\UniAuth.csproj",
-        "packagesPath": "C:\\Users\\HenrikE\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\HenrikE\\source\\repos\\UniAuth\\UniAuth\\obj\\",
+        "projectPath": "C:\\Users\\Henrik\\source\\repos\\WebApp\\UniAuth\\UniAuth.csproj",
+        "packagesPath": "C:\\Users\\Henrik\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Henrik\\source\\repos\\WebApp\\UniAuth\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\HenrikE\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Henrik\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -22,6 +26,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {

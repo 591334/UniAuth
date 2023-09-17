@@ -29,6 +29,10 @@ app.UseEndpoints(endpoints =>
     {
         endpoints.MapControllerRoute(
             name: "default",
+            pattern: "{controller=Login}/{action=Login}/{id?}");
+
+        endpoints.MapControllerRoute(
+            name: "RedirectToAuthorization",
             pattern: "{controller=Login}/{action=RedirectToAuthorization}/{id?}");
 
         endpoints.MapControllerRoute(

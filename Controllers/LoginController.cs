@@ -26,6 +26,12 @@ namespace UniAuth.Controllers
         };
 
         [HttpGet]
+        public IActionResult Login()
+        {
+            return View();
+        }
+
+        [HttpGet]
         public IActionResult RedirectToAuthorization()
         {
             string clientId = Client.clientId;
