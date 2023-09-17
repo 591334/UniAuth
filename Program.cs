@@ -14,14 +14,31 @@ if (!app.Environment.IsDevelopment())
 app.UseHttpsRedirection();
 app.UseStaticFiles();
 
+app.UseAuthentication();
 app.UseRouting();
 
 app.UseAuthorization();
 
-
+/*
 app.MapControllerRoute(
     name: "default",
     pattern: "{controller=Login}/{action=RedirectToAuthorization}/{id?}");
+*/
+
+app.UseEndpoints(endpoints =>
+    {
+        endpoints.MapControllerRoute(
+            name: "default",
+            pattern: "{controller=Login}/{action=RedirectToAuthorization}/{id?}");
+
+        endpoints.MapControllerRoute(
+            name: "MyContacts",
+            pattern: "{controller=MyContacts}/{action=MyContacts}/{id?}");
+
+        endpoints.MapControllerRoute(
+            name: "AddUser",
+            pattern: "{controller=AddUser}/{action=AddUser}/{id?}");
+    });
 
 
 
