@@ -26,10 +26,9 @@ Dette er første gangen jeg prøver meg på en slik authentiseringsprosess, og h
 Jeg prøvde å ta utgangspunkt i to av de ulike dokumentasjonene på https://developer.softrig.com/wiki/authentication/getting-started
 
 1. Softrig dokumentasjonen (SPA application)
-   - Generelt: Sleit ganske lenge med å komme til authentication og ble til slutt nødt til å prøve på "https://web.postman.co/". Kom tilslutt til rette da jeg isteden for å opprette en SPA client i softrig heller lagde en Web Client slik at jeg fikk en ClientSecret jeg kunne bruke for å sende requesten.
-   - Mulig det er brukerfeil av meg og at jeg burde ha klart å komme til autentiserings siden uten å sende med ClientSecret. 
-   - Step 2: '@angular/http' er deprecated. måtte derfor finne tilsvarende funksjoner i '@angular/common/http'
-   - Step 3: For meg som er helt fersk til authentiseringsprosesser var det vanskelig å se sammenheng i step 3 å ha en kontekst til auth.html og silent-renew.html
+   - Generelt: Sleit ganske lenge med å komme til authentication og ble til slutt nødt til å prøve på "https://web.postman.co/". Kom tilslutt til rette da jeg isteden for å opprette en SPA client i softrig heller lagde en Web Client slik at jeg fikk en ClientSecret jeg kunne bruke for å sende requesten. Mulig det er brukerfeil av meg og at jeg burde ha klart å komme til autentiserings siden uten å sende med ClientSecret. 
+   - Step 2: '@angular/http' er deprecated. måtte derfor finne tilsvarende funksjoner i '@angular/common/http. Ikke alt som var det samme her lenger'
+   - Step 3: Til å være helt fersk til authentiseringsprosesser var det vanskelig å se sammenheng i step 3 å ha en kontekst til auth.html og silent-renew.html
 
 2. Softrig dokumentasjon (Auth code)
    - Multiple tenant request og Appendix C: Fulgte utgangspunktet i Appendix C, men fikk ikke til å få ut token før jeg la til at CompanyKey skulle legges til i DefaultRequestHeaders (Såg det i seksjon "Multiple tenant request")
