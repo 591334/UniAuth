@@ -6,8 +6,6 @@ namespace UniAuth.Controllers
     {
         public IActionResult EditUser(string name)
         {
-            // Get Token
-            // Request user in api with same name as parameter
             return View();
         }
     }

@@ -14,31 +14,6 @@ namespace UniAuth.Models
         public Email DefaultEmail { get; set; }
         public string Comment { get; set; }
     
-            public async Task<HttpResponseMessage> AddUserAsync(HttpClient httpClient)
-            {
-                try
-                {
-                    // Convert the person data to JSON
-                    var personDataJson = JsonSerializer.Serialize(this);
-
-                    // Define the API endpoint URL
-                    var apiUrl = "http://test-api.softrig.com/api/biz/contacts";
-
-                    // Create a StringContent with the JSON data
-                    var content = new StringContent(personDataJson, Encoding.UTF8, "application/json");
-
-                    // Make the POST request and return the response
-                    return await httpClient.PostAsync(apiUrl, content);
-                }
-                catch (Exception ex)
-                {
-                    // Handle exceptions here (you may want to log the exception)
-                    Console.WriteLine(ex.Message);
-
-                    // Return a failure response
-                    return new HttpResponseMessage(System.Net.HttpStatusCode.InternalServerError);
-                }
-            }
         }
     }
     
